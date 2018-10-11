@@ -20,7 +20,7 @@ Ergodicity here specifically refers to the ergodicity of a trajectory *X*(t) wit
 
 # Ergodic Control
 
-Now we have a **differentiable** distance metric, we can take the directional derivative to do gradient descent to improve the ergodicity of a trajectory. The specific algorithm is attached below. Notice a big difference between this approach and Infotaxis is that Infotaxis chooses the optimal action according to the newly updated distribution at each step, while ergodic control computes a long horizon trajectory and sticks to the same trajectory until finished even as the agent starts to make measurements and update posterior distribution. Once a trajectory is carried out, the agent computes the next optimally ergodic trajectory according to the new distribution. This process is iterated until all goal locations are visited and found. 
+Now we have a **differentiable** distance metric, we can take the directional derivative to do gradient descent to improve the ergodicity of a trajectory. The specific algorithm is attached below. Notice a big difference between this approach and Infotaxis is that Infotaxis chooses the optimal action according to the newly updated distribution at each step, while ergodic control computes a long horizon trajectory and sticks to the same trajectory until finished even as the agent starts to make measurements and update posterior distribution. Once a trajectory is carried out, the agent computes the next optimally ergodic trajectory according to the new distribution. This process is iterated until all goal locations are visited and found.
 
 ![](images/algorithm.png)
 
@@ -34,4 +34,4 @@ To produce the following figures, I use iterative Linear Quadratic Regulator (iL
 
 ### Code
 
-For code, please find my contact at my [portfolio page](yanweiw.github.io). Cover image is an ergodic trajectory over a Gaussian distribution.
+For code, please find my contact at my [portfolio page](https://yanweiw.github.io). Cover image is an ergodic trajectory over a Gaussian distribution.
